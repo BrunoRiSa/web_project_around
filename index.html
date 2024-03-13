@@ -6,6 +6,11 @@
     <meta name="author" content="Bruno Sá" />
     <meta name="description" content="Social medial photo gallery interface" />
     <link rel="stylesheet" href="pages/index.css" />
+    <link
+      rel="shortcut icon"
+      href="./images/favicon_io/android-chrome-192x192.png"
+      type="image/x-icon"
+    />
     <title>Around the World</title>
   </head>
   <body>
@@ -14,11 +19,37 @@
         <div class="header__logo">
           <img
             src="./images/vectors/header-logo.png"
-            alt="Logo Around the USA"
+            alt="Logotipo Around the USA"
             class="header__logo-img"
           />
         </div>
       </header>
+      <main>
+        <section class="profile">
+          <div class="profile__header">
+            <div class="profile__avatar-name">
+              <img
+                src="./images/Avatar.png"
+                alt="Foto de perfil"
+                class="profile__avatar"
+              />
+              <div class="profile__txts">
+                <h3 class="profile__name">Jacques Cousteau</h3>
+                <button class="profile__edit-btn" type="button">
+                  <img src="./images/vectors/edit-button.png" alt="" />
+                </button>
+                <p class="profile__name-subtitle">Explorador</p>
+              </div>
+            </div>
+            <button class="profile__add-btn" type="button">
+              <img
+                src="./images/vectors/add-symbol.png"
+                alt="Botão para adicionar"
+              />
+            </button>
+          </div>
+        </section>
+      </main>
     </div>
   </body>
 </html>
