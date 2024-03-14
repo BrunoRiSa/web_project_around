@@ -1,6 +1,12 @@
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
 .gallery {
   display: grid;
-  grid-template-columns: repeat(3, auto);
+  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(282px, 2fr));
   gap: 21px 17px;
   max-width: 880px;
   margin-inline: auto;
