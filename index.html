@@ -49,6 +49,7 @@
             </button>
           </div>
         </section>
+
         <section class="gallery">
           <div class="gallery__card">
             <img
@@ -158,6 +159,31 @@
       <footer class="footer">
         <p class="footer__copyright">&#169; 2024 Around The U.S.</p>
       </footer>
+      <section class="popup">
+        <div class="popup__container">
+          <button type="button" class="popup__btn-close">
+            <img src="./images/vectors/close-icon.png" alt="" />
+          </button>
+          <p class="popup__title">Editar Perfil</p>
+          <form class="popup__form">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="popup__input-name popup__input-name_m_b-s"
+              placeholder="Jacques Cousteau"
+            />
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="popup__input-name popup__input-name_m_b-l"
+              placeholder="Explorador"
+            />
+            <button type="submit" class="popup__btn">Salvar</button>
+          </form>
+        </div>
+      </section>
     </div>
   </body>
 </html>
