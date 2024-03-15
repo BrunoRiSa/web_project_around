@@ -27,6 +27,7 @@
   background-color: white;
   padding: 25px 15px;
   border-radius: 0 0 10px 10px;
+  max-width: 282px;
 }
 
 .gallery__card-subtitle {
@@ -45,4 +46,9 @@
   padding: 0;
   /* background-clip: text; */
   background-color: transparent;
+  cursor: pointer;
+}
+
+.gallery__card-btn:hover {
+  opacity: 0.6;
 }

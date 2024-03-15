@@ -9,6 +9,7 @@
   border-radius: 10px;
   margin-right: -215px;
   margin-top: -175px;
+  display: none;
 }
 
 .popup__fieldset {
@@ -82,4 +83,8 @@
   border: none;
   outline: none;
   background-color: transparent;
+}
+
+.popup__btn-close:hover {
+  opacity: 0.6;
 }
