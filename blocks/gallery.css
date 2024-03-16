@@ -7,6 +7,7 @@
   display: grid;
   justify-items: center;
   grid-template-columns: repeat(auto-fit, minmax(282px, 2fr));
+
   gap: 21px 17px;
   max-width: 880px;
   margin-inline: auto;
@@ -57,4 +58,18 @@
 
 .gallery__card-btn:hover {
   opacity: 0.6;
+}
+
+@media (max-width: 900px) {
+  .gallery {
+  }
+}
+
+@media (max-width: 880px) {
+  .gallery {
+    max-width: 564px;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0;
+    margin: 0 auto;
+  }
 }
