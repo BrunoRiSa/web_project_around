@@ -117,6 +117,16 @@
                   class="gallery__card-like-btn"
                 />
               </button>
+              <button
+                type="button"
+                class="gallery__card-btn gallery__card-like-btn-black"
+              >
+                <img
+                  src="./images/vectors/black-heart.png"
+                  alt=""
+                  class="gallery__card-like-btn gallery__card-like-btn-black"
+                />
+              </button>
             </div>
           </div>
           <div class="gallery__card">
@@ -159,10 +169,14 @@
       <footer class="footer">
         <p class="footer__copyright">&#169; 2024 Around The U.S.</p>
       </footer>
-      <section class="popup">
+      <section class="popup popup_opened">
         <div class="popup__container">
           <button type="button" class="popup__btn-close">
-            <img src="./images/vectors/close-icon.png" alt="" />
+            <img
+              class="popup__btn-close-img"
+              src="./images/vectors/close-icon.png"
+              alt=""
+            />
           </button>
           <p class="popup__title">Editar Perfil</p>
           <form class="popup__form">
@@ -186,4 +200,5 @@
       </section>
     </div>
   </body>
+  <script src="./index.js"></script>
 </html>

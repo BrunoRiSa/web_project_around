@@ -13,6 +13,6 @@
 
 @media screen and (max-width: 900px) {
   .header {
-    padding-inline: 42px;
+    max-width: 780px;
   }
 }

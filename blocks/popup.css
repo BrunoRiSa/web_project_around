@@ -12,13 +12,6 @@
   display: none;
 }
 
-.popup__fieldset {
-  max-width: 430px;
-  border: none;
-  outline: none;
-  padding: 0;
-}
-
 .popup__title {
   font-family: Inter;
   font-size: 24px;
@@ -87,4 +80,33 @@
 
 .popup__btn-close:hover {
   opacity: 0.6;
+}
+
+.popup_opened {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .popup__btn-close-img {
+    width: 26px;
+    height: 26px;
+  }
+
+  .popup__btn-close {
+    left: 400px;
+    top: -40px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .popup {
+    max-width: 282px;
+    width: 100%;
+    margin-right: -141px;
+  }
+
+  .popup__btn-close {
+    left: 250px;
+    top: -40px;
+  }
 }

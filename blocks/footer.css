@@ -10,3 +10,17 @@
   line-height: 22px;
   color: rgba(84, 84, 84, 1);
 }
+
+@media screen and (max-width: 900px) {
+  .footer {
+    max-width: 580px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .footer {
+    max-width: 282px;
+    width: 100%;
+  }
+}
