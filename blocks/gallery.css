@@ -47,23 +47,35 @@
   overflow: hidden;
 }
 
-.gallery__card-btn {
+.gallery__card-btn-blck {
   border: 0;
-  outline: none;
-  padding: 0;
-  /* background-clip: text; */
-  background-color: transparent;
+  /* outline: none;
+  padding: 0; */
+  background-image: url(../images/vectors/blck-heart.svg);
+  margin-top: 5px;
+  padding-right: 21px;
+  padding-bottom: 2px;
+  width: 21px;
+  height: 19px;
+  background-size: cover;
+  border: none;
   cursor: pointer;
+  background-color: white;
 }
 
-.gallery__card-like-btn-black {
+.gallery__card-btn {
   border: 0;
-  outline: none;
-  padding: 0;
+  /* outline: none;
+  padding: 0; */
+  background-image: url(../images/vectors/like-btn.svg);
   cursor: pointer;
-  position: relative;
-  right: 21px;
-  display: none;
+  margin-top: 5px;
+  padding-right: 22px;
+  padding-bottom: 2px;
+  width: 21px;
+  height: 19px;
+  background-size: cover;
+  background-color: white;
 }
 
 .gallery__card-btn:hover {

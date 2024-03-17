@@ -59,13 +59,12 @@
             />
             <div class="gallery__card-footer">
               <p class="gallery__card-subtitle">Big Sur, California</p>
-              <button type="button" class="gallery__card-btn">
-                <img
-                  src="./images/vectors/like-btn.png"
-                  alt=""
-                  class="gallery__card-like-btn"
-                />
-              </button>
+              <button
+                onclick="active()"
+                id="btn"
+                type="button"
+                class="gallery__card-btn gallery__card-btn-blck vtnc"
+              ></button>
             </div>
           </div>
           <div class="gallery__card">
@@ -76,13 +75,7 @@
             />
             <div class="gallery__card-footer">
               <p class="gallery__card-subtitle">Oahu, Hawaii</p>
-              <button type="button" class="gallery__card-btn">
-                <img
-                  src="./images/vectors/like-btn.png"
-                  alt=""
-                  class="gallery__card-like-btn"
-                />
-              </button>
+              <button type="button" class="gallery__card-btn"></button>
             </div>
           </div>
           <div class="gallery__card">
@@ -93,13 +86,7 @@
             />
             <div class="gallery__card-footer">
               <p class="gallery__card-subtitle">Yosemite Park, California</p>
-              <button type="button" class="gallery__card-btn">
-                <img
-                  src="./images/vectors/like-btn.png"
-                  alt=""
-                  class="gallery__card-like-btn"
-                />
-              </button>
+              <button type="button" class="gallery__card-btn"></button>
             </div>
           </div>
           <div class="gallery__card">
@@ -110,23 +97,7 @@
             />
             <div class="gallery__card-footer">
               <p class="gallery__card-subtitle">Grand Canyon, Arizona</p>
-              <button type="button" class="gallery__card-btn">
-                <img
-                  src="./images/vectors/like-btn.png"
-                  alt=""
-                  class="gallery__card-like-btn"
-                />
-              </button>
-              <button
-                type="button"
-                class="gallery__card-btn gallery__card-like-btn-black"
-              >
-                <img
-                  src="./images/vectors/black-heart.png"
-                  alt=""
-                  class="gallery__card-like-btn gallery__card-like-btn-black"
-                />
-              </button>
+              <button type="button" class="gallery__card-btn"></button>
             </div>
           </div>
           <div class="gallery__card">
@@ -137,13 +108,7 @@
             />
             <div class="gallery__card-footer">
               <p class="gallery__card-subtitle">Tahoe Lake, Nevada</p>
-              <button type="button" class="gallery__card-btn">
-                <img
-                  src="./images/vectors/like-btn.png"
-                  alt=""
-                  class="gallery__card-like-btn"
-                />
-              </button>
+              <button type="button" class="gallery__card-btn"></button>
             </div>
           </div>
           <div class="gallery__card">
@@ -154,16 +119,8 @@
             />
             <div class="gallery__card-footer">
               <p class="gallery__card-subtitle">Grand Teton, Wyoming</p>
-              <button type="button" class="gallery__card-btn">
-                <img
-                  src="./images/vectors/like-btn.png"
-                  alt=""
-                  class="gallery__card-like-btn"
-                />
-              </button>
-            </div>
-            <p class="gallery__card-subtitle">Grand Teton, Wyoming</p>
-          </div>
+              <button type="button" class="gallery__card-btn"></button>
+
         </section>
       </main>
       <footer class="footer">
@@ -185,14 +142,14 @@
               name="name"
               id="name"
               class="popup__input-name popup__input-name_m_b-s"
-              placeholder="Jacques Cousteau"
+              placeholder="Nome"
             />
             <input
               type="text"
               name="occupation"
               id="occupation"
               class="popup__input-name popup__input-name_m_b-l"
-              placeholder="Explorador"
+              placeholder="Sobre mim"
             />
             <button type="submit" class="popup__btn">Salvar</button>
           </form>
