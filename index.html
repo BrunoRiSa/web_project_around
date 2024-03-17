@@ -14,7 +14,7 @@
     <title>Around the World</title>
   </head>
   <body>
-    <div class="page">
+    <div class="page page_opacity">
       <header class="header">
         <div class="header__logo">
           <img
@@ -34,11 +34,11 @@
                 class="profile__avatar"
               />
               <div class="profile__txts">
-                <h3 class="profile__name">Jacques Cousteau</h3>
+                <h3 id="profile-name" class="profile__name">Jacques Cousteau</h3>
                 <button class="profile__edit-btn" type="button">
                   <img src="./images/vectors/edit-button.png" alt="" />
                 </button>
-                <p class="profile__name-subtitle">Explorador</p>
+                <p id="profile-job" class="profile__name-subtitle">Explorador</p>
               </div>
             </div>
             <button class="profile__add-btn" type="button">
@@ -120,42 +120,42 @@
             <div class="gallery__card-footer">
               <p class="gallery__card-subtitle">Grand Teton, Wyoming</p>
               <button type="button" class="gallery__card-btn"></button>
-
         </section>
       </main>
       <footer class="footer">
         <p class="footer__copyright">&#169; 2024 Around The U.S.</p>
       </footer>
-      <section class="popup popup_opened">
-        <div class="popup__container">
-          <button type="button" class="popup__btn-close">
-            <img
-              class="popup__btn-close-img"
-              src="./images/vectors/close-icon.png"
-              alt=""
-            />
-          </button>
-          <p class="popup__title">Editar Perfil</p>
-          <form class="popup__form">
-            <input
-              type="text"
-              name="name"
-              id="name"
-              class="popup__input-name popup__input-name_m_b-s"
-              placeholder="Nome"
-            />
-            <input
-              type="text"
-              name="occupation"
-              id="occupation"
-              class="popup__input-name popup__input-name_m_b-l"
-              placeholder="Sobre mim"
-            />
-            <button type="submit" class="popup__btn">Salvar</button>
-          </form>
-        </div>
-      </section>
+
     </div>
+    <section class="popup popup_opened">
+      <div class="popup__container">
+        <button type="button" class="popup__btn-close">
+          <img
+            class="popup__btn-close-img"
+            src="./images/vectors/close-icon.png"
+            alt=""
+          />
+        </button>
+        <p class="popup__title">Editar Perfil</p>
+        <form class="popup__form">
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="popup__input-name popup__input-name_m_b-s"
+            placeholder="Nome"
+          />
+          <input
+            type="text"
+            name="occupation"
+            id="occupation"
+            class="popup__input-occupation popup__input-name_m_b-l"
+            placeholder="Sobre mim"
+          />
+          <button type="submit" class="popup__btn">Salvar</button>
+        </form>
+      </div>
+    </section>
   </body>
   <script src="./index.js"></script>
 </html>

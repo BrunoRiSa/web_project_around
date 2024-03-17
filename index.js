@@ -1,3 +1,5 @@
+// funçao de abertura e fechamento do popup
+
 let editBtn = document.querySelector(".profile__edit-btn");
 let closeBtn = document.querySelector(".popup__btn-close");
 let popUp = document.querySelector(".popup");
@@ -13,6 +15,23 @@ function popUpClose() {
 }
 
 closeBtn.addEventListener("click", popUpClose);
+
+// funçção que altera a opacidade da page
+
+let page = document.querySelector(".page");
+function opacity() {
+  page.style.opacity = "0.5";
+}
+
+editBtn.addEventListener("click", opacity);
+
+function opaco() {
+  page.style.opacity = "1";
+}
+
+closeBtn.addEventListener("click", opaco);
+
+//função para os botoes de like dos cards
 
 let vtnc = document.querySelector(".vtnc");
 let btn = document.querySelector(".gallery__card-btn");
@@ -32,10 +51,39 @@ buttons.forEach(function (button) {
   });
 });
 
-// function active() {
-//   vtnc.style.backgroundImage = "url(./images/vectors/blck-heart.svg)";
-// }
+// Vamos encontrar o formulário no DOM
+let formElement = document.querySelector(".popup__form");
 
-// function inactive() {
-//   vtnc.style.backgroundImage = "url(./images/vectors/like-btn.svg";
-// }
+// Em seguida vem o handler do submit
+// ainda não vai enviar para lugar nenhum
+
+// Observe que o nome da função começa com um verbo
+// e descreve exatamente o que a função faz
+function handleProfileFormSubmit(evt) {
+  // Esta linha impede o navegador
+  // de enviar o formulário da forma padrão.
+  evt.preventDefault();
+  // Fazendo isso, podemos definir nossa própria forma de enviar o formulário.
+  // Explicaremos em mais detalhes posteriormente.
+
+  // Vamos encontrar os campos de formulário do DOM
+  let nameInput = document.querySelector("#name");
+  let jobInput = document.querySelector("#occupation");
+
+  // Pegue os valores de cada campo do valor da propriedade correspondente
+  let name = nameInput.value;
+  let job = jobInput.value;
+  // Selecione os elementos aos quais os valores dos campos serão inseridos
+  let editedName = document.querySelector("#profile-name");
+  let editedJob = document.querySelector("#profile-job");
+  // Insira novos valores usando a
+  // propriedade textContent
+
+  editedName.textContent = name;
+  editedJob.textContent = job;
+}
+
+// Conecte o handler ao formulário:
+// ele vai observar o evento de submit
+
+formElement.addEventListener("submit", handleProfileFormSubmit);
