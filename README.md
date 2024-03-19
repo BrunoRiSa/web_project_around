@@ -1,12 +1,14 @@
 # Tripleten Around U.S Project
 
+https://brunorisa.github.io/web_project_around/
+
 ## Sobre o projeto
 
 - Esse projeto teve como objetivo criar uma interface responsiva no estilo de algumas redes sociais focadas em galeria de fotos.
 
 ## Funcionalidades
 
-- Foi implementado um profile interativo por meio de java script, onde é possível editar o nome do usuário, assim como sua ocupação/profissão.
+- Profile interativo, onde é possível editar o nome do usuário, assim como sua ocupação/profissão.
 - Na galeria, a interatividade se dá pela posibilidade de acionar o botão de curtir. Ao clicar, o coração é preenchido pela cor preta.
 
 ## Tecnologias utilizadas
@@ -17,6 +19,6 @@
 - Metodologia BEM
 - Git
 
-## Layout
+## Layout do projeto
 
 ![Layout](./assets/Sem%20Título-1.jpg)
