@@ -34,11 +34,15 @@
                 class="profile__avatar"
               />
               <div class="profile__txts">
-                <h3 id="profile-name" class="profile__name">Jacques Cousteau</h3>
+                <h3 id="profile-name" class="profile__name">
+                  Jacques Cousteau
+                </h3>
                 <button class="profile__edit-btn" type="button">
                   <img src="./images/vectors/edit-button.png" alt="" />
                 </button>
-                <p id="profile-job" class="profile__name-subtitle">Explorador</p>
+                <p id="profile-job" class="profile__name-subtitle">
+                  Explorador
+                </p>
               </div>
             </div>
             <button class="profile__add-btn" type="button">
@@ -58,12 +62,12 @@
               class="gallery__card-img"
             />
             <div class="gallery__card-footer">
-              <p class="gallery__card-subtitle">Big Sur, California</p>
+              <h3 class="gallery__card-subtitle">Big Sur, California</h3>
               <button
                 onclick="active()"
                 id="btn"
                 type="button"
-                class="gallery__card-btn gallery__card-btn-blck vtnc"
+                class="gallery__card-btn gallery__card-btn-blck"
               ></button>
             </div>
           </div>
@@ -74,7 +78,7 @@
               class="gallery__card-img"
             />
             <div class="gallery__card-footer">
-              <p class="gallery__card-subtitle">Oahu, Hawaii</p>
+              <h3 class="gallery__card-subtitle">Oahu, Hawaii</h3>
               <button type="button" class="gallery__card-btn"></button>
             </div>
           </div>
@@ -85,8 +89,11 @@
               class="gallery__card-img"
             />
             <div class="gallery__card-footer">
-              <p class="gallery__card-subtitle">Yosemite Park, California</p>
-              <button type="button" class="gallery__card-btn"></button>
+              <h3 class="gallery__card-subtitle">Yosemite Park, California</h3>
+              <button
+                type="button"
+                class="gallery__card-btn gallery__card-btn-blck"
+              ></button>
             </div>
           </div>
           <div class="gallery__card">
@@ -96,8 +103,11 @@
               class="gallery__card-img"
             />
             <div class="gallery__card-footer">
-              <p class="gallery__card-subtitle">Grand Canyon, Arizona</p>
-              <button type="button" class="gallery__card-btn"></button>
+              <h3 class="gallery__card-subtitle">Grand Canyon, Arizona</h3>
+              <button
+                type="button"
+                class="gallery__card-btn gallery__card-btn-blck"
+              ></button>
             </div>
           </div>
           <div class="gallery__card">
@@ -107,8 +117,11 @@
               class="gallery__card-img"
             />
             <div class="gallery__card-footer">
-              <p class="gallery__card-subtitle">Tahoe Lake, Nevada</p>
-              <button type="button" class="gallery__card-btn"></button>
+              <h3 class="gallery__card-subtitle">Tahoe Lake, Nevada</h3>
+              <button
+                type="button"
+                class="gallery__card-btn gallery__card-btn-blck"
+              ></button>
             </div>
           </div>
           <div class="gallery__card">
@@ -118,14 +131,18 @@
               class="gallery__card-img"
             />
             <div class="gallery__card-footer">
-              <p class="gallery__card-subtitle">Grand Teton, Wyoming</p>
-              <button type="button" class="gallery__card-btn"></button>
+              <h3 class="gallery__card-subtitle">Grand Teton, Wyoming</h3>
+              <button
+                type="button"
+                class="gallery__card-btn gallery__card-btn-blck"
+              ></button>
+            </div>
+          </div>
         </section>
       </main>
       <footer class="footer">
         <p class="footer__copyright">&#169; 2024 Around The U.S.</p>
       </footer>
-
     </div>
     <section class="popup popup_opened">
       <div class="popup__container">
@@ -136,7 +153,7 @@
             alt=""
           />
         </button>
-        <p class="popup__title">Editar Perfil</p>
+        <h3 class="popup__title">Editar Perfil</h3>
         <form class="popup__form">
           <input
             type="text"
@@ -149,13 +166,13 @@
             type="text"
             name="occupation"
             id="occupation"
-            class="popup__input-occupation popup__input-name_m_b-l"
+            class="popup__input-occupation popup__input-occupation_m_b-l"
             placeholder="Sobre mim"
           />
           <button type="submit" class="popup__btn">Salvar</button>
         </form>
       </div>
     </section>
+    <script src="./index.js"></script>
   </body>
-  <script src="./index.js"></script>
 </html>

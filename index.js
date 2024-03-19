@@ -4,17 +4,17 @@ let editBtn = document.querySelector(".profile__edit-btn");
 let closeBtn = document.querySelector(".popup__btn-close");
 let popUp = document.querySelector(".popup");
 
-function popup() {
+function popupOpen() {
   popUp.style.display = "block";
 }
 
-editBtn.addEventListener("click", popup);
+editBtn.addEventListener("click", popupOpen);
 
-function popUpClose() {
+function popupClose() {
   popUp.style.display = "none";
 }
 
-closeBtn.addEventListener("click", popUpClose);
+closeBtn.addEventListener("click", popupClose);
 
 // funçção que altera a opacidade da page
 
@@ -33,11 +33,10 @@ closeBtn.addEventListener("click", opaco);
 
 //função para os botoes de like dos cards
 
-let vtnc = document.querySelector(".vtnc");
 let btn = document.querySelector(".gallery__card-btn");
 let blck = document.querySelector(".gallery__card-btn-blck");
 
-var buttons = document.querySelectorAll(".gallery__card-btn");
+let buttons = document.querySelectorAll(".gallery__card-btn");
 
 buttons.forEach(function (button) {
   button.addEventListener("click", function () {
@@ -81,6 +80,9 @@ function handleProfileFormSubmit(evt) {
 
   editedName.textContent = name;
   editedJob.textContent = job;
+
+  popUp.style.display = "none";
+  page.style.opacity = "1";
 }
 
 // Conecte o handler ao formulário:

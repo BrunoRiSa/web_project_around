@@ -16,3 +16,9 @@
     max-width: 780px;
   }
 }
+
+@media screen and (max-width: 780px) {
+  .header__logo-img {
+    margin-left: 27px;
+  }
+}
