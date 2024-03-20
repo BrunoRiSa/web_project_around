@@ -19,17 +19,17 @@ closeBtn.addEventListener("click", popupClose);
 // funçção que altera a opacidade da page
 
 let page = document.querySelector(".page");
-function opacity() {
+function SetLowerOpacity() {
   page.style.opacity = "0.5";
 }
 
-editBtn.addEventListener("click", opacity);
+editBtn.addEventListener("click", SetLowerOpacity);
 
-function opaco() {
+function setNormalOpacity() {
   page.style.opacity = "1";
 }
 
-closeBtn.addEventListener("click", opaco);
+closeBtn.addEventListener("click", setNormalOpacity);
 
 //função para os botoes de like dos cards
 
